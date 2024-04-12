@@ -80,6 +80,7 @@ nav-main{
 #nav{
   height: 100px;
   width: 100%;
+  
   position: fixed;
   top: 0;
   background-color: #EF9D71;
@@ -103,16 +104,78 @@ nav-main{
   color: antiquewhite;
   margin: 20px;
 
+
 }
 
 #nav #part2 a:nth-last-child(1){
-  background-color: aquamarine;
+  background-color:rgb(28, 97, 63);
   padding: 7px 18px;
   border-radius: 50px;
   border: 1px solid 000;
 
 }
 
+
+@media screen and (max-width: 600px){
+  h1{
+    font-size: 24;
+    line-height: 50px;
+  }
+
+body {
+  padding-top: 50px; /* Adjust this value to match the height of your navigation bar */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0; /* Ensure the navbar is above other content */
+  background-color: #fff; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 50px; /* Adjust this value to match the height of your navigation bar */
+}
+
+#nav-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: #333; /* Adjust as needed */
+  color: #fff; /* Adjust as needed */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#part2 {
+  display: flex;
+}
+
+.btmtext {
+  color: white;
+  font-size: 24px;
+}
+
+.vdodiv {
+  height: 1000vh;
+}
 
 
 
